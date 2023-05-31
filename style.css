@@ -29,6 +29,37 @@ nav ul li a:hover {
   color: #ccc;
 }
 
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+header, footer {
+  background-color: #222;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+h1, h2 {
+  color: #fff;
+}
+
+img {
+  border: 1px solid #fff;
+}
+
+#publications ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+
 #logo {
   position: absolute;
   top: 10px;
@@ -42,4 +73,5 @@ nav ul li a:hover {
   max-width: 100px; /* Adjust the size as needed */
   border-radius: 50%;
 }
+
 
