@@ -12,27 +12,27 @@
     </div>
     <h1>Dr. Owain Beynon</h1>
     <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="tabs">
+        <li class="tablinks" onclick="openTab(event, 'about')"><a href="#about">About</a></li>
+        <li class="tablinks" onclick="openTab(event, 'research')"><a href="#research">Research</a></li>
+        <li class="tablinks" onclick="openTab(event, 'publications')"><a href="#publications">Publications</a></li>
+        <li class="tablinks" onclick="openTab(event, 'contact')"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" class="tabcontent">
       <h2>About</h2>
       <p>Hi, you've reached the page of Dr Owain Beynon, Postdoctoral Research Fellow in Materials Modelling at UCL.</p>
     </section>
 
-    <section id="research">
+    <section id="research" class="tabcontent">
       <h2>Research</h2>
       <p> .</p>
     </section>
 
-    <section id="publications">
+    <section id="publications" class="tabcontent">
       <h2>Publications</h2>
       <ul>
         <li>Publication 1</li>
@@ -42,7 +42,7 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="tabcontent">
       <h2>Contact</h2>
       <p>If you have any inquiries or would like to get in touch, please feel free to reach out to me:</p>
       <ul>
@@ -57,5 +57,22 @@
   <footer>
     <p>© 2023 Dr. Owain Beynon. All rights reserved.</p>
   </footer>
+
+  <script>
+    function openTab(event, tabId) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabId).style.display = "block";
+      event.currentTarget.className += " active";
+    }
+  </script>
 </body>
 </html>
+
