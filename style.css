@@ -28,3 +28,13 @@ img {
 nav ul li a:hover {
   color: #ccc;
 }
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#logo img {
+  max-width: 100px; /* Adjust the size as needed */
+}
