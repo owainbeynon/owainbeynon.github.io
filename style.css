@@ -37,32 +37,42 @@ nav ul li a:hover {
 
 #logo img {
   max-width: 100px; /* Adjust the size as needed */
-  border-radius: 50%;
 }
 
 .tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
-  border-bottom: 1px solid #ccc;
+  background-color: #333;
 }
 
-.tablinks {
-  background-color: #f2f2f2;
+.tabs li {
   float: left;
-  border: 1px solid #ccc;
-  border-bottom: none;
-  cursor: pointer;
-  padding: 8px 16px;
 }
 
-.tablinks:hover {
-  background-color: #ddd;
+.tabs li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.tablinks.active {
-  background-color: #ccc;
+.tabs li a:hover {
+  background-color: #444;
 }
 
 .tabcontent {
   display: none;
 }
+
+#about {
+  display: block;
+}
+
+.tablinks.active {
+  background-color: #555;
+}
+
 
