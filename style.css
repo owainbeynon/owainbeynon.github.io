@@ -1,54 +1,30 @@
-/* Add a background color to the header and footer */
-header, footer {
+body {
   background-color: #333;
   color: #fff;
-  padding: 10px;
 }
 
-/* Style the navigation links */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
+header, footer {
+  background-color: #222;
 }
 
 nav ul li a {
   color: #fff;
-  text-decoration: none;
-}
-
-/* Style the main sections */
-main {
-  margin: 20px;
-}
-
-section {
-  margin-bottom: 20px;
 }
 
 h1, h2 {
-  color: #333;
+  color: #fff;
 }
 
-/* Add a border and padding to the image */
 img {
-  border: 1px solid #ccc;
-  padding: 10px;
-  max-width: 100%;
+  border: 1px solid #fff;
 }
 
-/* Add some spacing and style to the publications list */
 #publications ul {
   list-style: disc;
   padding-left: 20px;
+  color: #fff;
 }
 
-/* Add a hover effect to the navigation links */
 nav ul li a:hover {
-  color: #f2f2f2;
+  color: #ccc;
 }
