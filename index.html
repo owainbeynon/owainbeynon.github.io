@@ -4,10 +4,59 @@
   <meta charset="UTF-8">
   <title>Dr. Owain Beynon</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .tabcontent {
+      display: none;
+    }
+
+    .tabs {
+      overflow: hidden;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .tablinks {
+      background-color: #f2f2f2;
+      float: left;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      cursor: pointer;
+      padding: 8px 16px;
+    }
+
+    .tablinks:hover {
+      background-color: #ddd;
+    }
+
+    .tablinks.active {
+      background-color: #ccc;
+    }
+  </style>
+  <script>
+    function openTab(evt, tabName) {
+      // Hide all tab contents
+      const tabContents = document.getElementsByClassName('tabcontent');
+      for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = 'none';
+      }
+
+      // Remove 'active' class from all tab links
+      const tabLinks = document.getElementsByClassName('tablinks');
+      for (let i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove('active');
+      }
+
+      // Show the selected tab content and add 'active' class to the clicked tab link
+      document.getElementById(tabName).style.display = 'block';
+      evt.currentTarget.classList.add('active');
+    }
+
+    // Set the default tab as active
+    document.getElementsByClassName('tablinks')[0].click();
+  </script>
 </head>
 <body>
   <header>
-   <div id="logo">
+    <div id="logo">
       <img src="owain.jpg" alt="Logo">
     </div>
     <h1>Dr. Owain Beynon</h1>
@@ -34,28 +83,15 @@
 
     <section id="publications">
       <h2>Publications</h2>
-      <ul>
-        <li>Publication 1</li>
-        <li>Publication 2</li>
-        <li>Publication 3</li>
-        <!-- Add more publications as needed -->
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>If you have any inquiries or would like to get in touch, please feel free to reach out to me:</p>
-      <ul>
-        <li>Email: [insert email address]</li>
-        <li>Phone: [insert phone number]</li>
-        <li>LinkedIn: [insert LinkedIn profile URL]</li>
-        <li>Twitter: [insert Twitter handle]</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2023 Dr. Owain Beynon. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+      <div class="tabs">
+        <button class="tablinks" onclick="openTab(event, 'tab1')">Tab 1</button>
+        <button class="tablinks" onclick="openTab(event, 'tab2')">Tab 2</button>
+        <button class="tablinks" onclick="openTab(event, 'tab3')">Tab 3</button>
+      </div>
+      <div id="tab1" class="tabcontent">
+        <h3>Tab 1 Content</h3>
+        <p>Content for Tab 1 goes here.</p>
+      </div>
+      <div id="tab2" class="tabcontent">
+        <h3>Tab 2 Content</h3>
+        <p>Content for Tab 2 goes
