@@ -11,10 +11,11 @@ body {
   min-height: 100vh;
 }
 
-}
-
 header {
   background-color: #000;
+  position: relative; /* Add position relative to allow stacking of elements */
+  z-index: 1; /* Set a higher z-index value to ensure the header is on top */
+
 }
 
 footer {
