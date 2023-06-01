@@ -146,7 +146,8 @@ main {
 }
 
 footer {
+  background-color: #000;
+  color: #fff; /* Change the text color to white */
   margin-top: auto;
   padding: 20px;
 }
-
