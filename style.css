@@ -46,16 +46,6 @@ nav ul li a:hover {
   color: #ccc;
 }
 
-#logo {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#logo img {
-  max-width: 100px; /* Adjust the size as needed */
-}
-
 .tabs {
   list-style-type: none;
   margin: 0;
@@ -86,6 +76,11 @@ nav ul li a:hover {
 
 #about {
   display: block;
+}
+
+#about-image img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .tablinks.active {
