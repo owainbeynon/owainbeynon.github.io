@@ -7,17 +7,18 @@
 </head>
 <body>
   <header>
-    <h1>Dr. Owain Beynon</h1>
+    <h1></h1>
     <nav>
+      <div class="search-bar">
+       <input type="text" placeholder="Search">
+       <button onclick="toggleSearchBar()"><img src="search.png" alt="Search"></button>
+      </div>
       <ul class="tabs">
         <li class="tablinks" onclick="openTab(event, 'about')"><a href="#about">Home</a></li>
         <li class="tablinks" onclick="openTab(event, 'research')"><a href="#research">Research</a></li>
         <li class="tablinks" onclick="openTab(event, 'publications')"><a href="#publications">Publications</a></li>
         <li class="tablinks" onclick="openTab(event, 'contact')"><a href="#contact">Contact</a></li>
       </ul>
-      <div class="search-bar">
-       <input type="text" placeholder="Search">
-       <button onclick="toggleSearchBar()"><img src="search.png" alt="Search"></button>
      </div>
     </nav>
   </header>
