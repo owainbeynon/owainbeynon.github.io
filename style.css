@@ -30,6 +30,14 @@ img {
   color: #fff;
 }
 
+#publications a {
+  color: #fff;
+}
+
+#publications a:hover {
+  color: #ccc;
+}
+
 nav ul li a:hover {
   color: #ccc;
 }
