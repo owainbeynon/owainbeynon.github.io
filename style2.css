@@ -141,7 +141,13 @@ nav ul li a:hover {
 
 .right-column {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 
 .right-column h3 {
   margin-top: 0;
