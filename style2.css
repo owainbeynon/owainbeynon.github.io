@@ -144,12 +144,13 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   margin-right: 20px;
-  font-size: 22px; /* Adjust the font size as needed */
+  font-size: 18px; /* Adjust the font size as needed */
   margin-bottom: 10px; /* Add margin at the bottom of the name */
 }
 
 .right-column {
   flex: 1;
+  font-size: 14px
 }
 
 .right-column h3 {
