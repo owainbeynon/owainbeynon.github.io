@@ -111,8 +111,8 @@ nav ul li a:hover {
 }
 
 #about-image {
-  width: 300px; /* Adjust the width as needed */
-  height: 300px; /* Adjust the height as needed */
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
@@ -144,6 +144,8 @@ nav ul li a:hover {
   align-items: center;
   text-align: center;
   margin-right: 20px;
+  font-size: 32px; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Add margin at the bottom of the name */
 }
 
 .right-column {
