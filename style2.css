@@ -1,13 +1,12 @@
 body {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.9); /* Set the background color with alpha value */
-  color: #000;
-  font-family: Arial, sans-serif;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif; /* Change the font family as needed */
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
 }
 
 header {
