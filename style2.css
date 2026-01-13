@@ -1,5 +1,5 @@
 body {
-  background-image: url("colour_background.jpg");
+  background-image: url(");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.9); /* Set the background color with alpha value */
